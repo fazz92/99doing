@@ -1,0 +1,31 @@
+{
+  "name": "99doing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server ./js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazz92/99doing.git"
+  },
+  "author": "Ganesh HS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fazz92/99doing/issues"
+  },
+  "homepage": "https://github.com/fazz92/99doing#readme",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
