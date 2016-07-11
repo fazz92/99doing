@@ -1,13 +1,9 @@
 # 99doing
 
-Intro to webpack:
+Working with CSS =>
 
-https://github.com/petehunt/webpack-howto
+'grunt lessDev' =>
 
-Watch this tutorial to setup workflow on webpack :
+	Loops through the less folder to find the index.less file in the corresponding folder to create the CSS file that can be consumed later
 
-https://www.youtube.com/watch?v=TaWKUpahFZM
 
-More features on sass-loader:
-
-https://github.com/jtangelder/sass-loader

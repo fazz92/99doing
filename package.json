@@ -2,11 +2,6 @@
   "name": "99doing",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server ./js/index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fazz92/99doing.git"
@@ -18,14 +13,31 @@
   },
   "homepage": "https://github.com/fazz92/99doing#readme",
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "node-sass": "^3.8.0",
-    "sass-loader": "^4.0.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "requirejs": "^2.1.20"
   },
   "dependencies": {
-    "angular": "^1.5.7"
+    "grunt": "^0.4.2",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.5.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-requirejs": "~0.4.3",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "jshint": "~2.5.0",
+    "lodash": "^4.0.0",
+    "ng-annotate": "^0.15.4"
+  },
+  "volo": {
+    "baseDir": "library/js/vendor",
+    "dependencies": {
+      "jquery": "github:jquery/jquery/2.0.3",
+      "require": "github:jrburke/requirejs/2.1.9",
+      "angular": "github:angular/angular.js/v1.5.0",
+      "handlebars": "github:components/handlebars.js/v1.3.0#handlebars.amd.js",
+      "lodash.underscore": "github:lodash/lodash/2.4.1#dist/lodash.underscore.js"
+    }
   }
 }
