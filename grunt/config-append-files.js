@@ -42,7 +42,8 @@ module.exports = function ( grunt ) {
 
             return grunt.file.expand( { cwd: path }, [
                 '**/*.less',
-                '**/bootstrap.css'
+                '**/bootstrap.css',
+                '**/fontawesome.css'
             ] );
         }
     });

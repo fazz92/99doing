@@ -5,9 +5,78 @@
 	<meta charset="utf-8">
 	<!-- Global CSS included followed by page specific CSS -->
 	<link rel="stylesheet" type="text/css" href="library/css/global/index.css">
+	<link rel="stylesheet" type="text/css" href="library/css/landing/index.css">
 </head>
 <body>
-	<h1>Welcome to 99doing! We're trying to do epic shit!</h1>
+	<nav class="navbar navbar-default navbar-fixed-top fs-header noboxing nopadding">
+
+		<div class="fsnavbar-header">
+			<div class="fs-left col-xs-2">
+				<a class="fs-left toggle-button" href="javascript:void(0);">
+					<i class="fa fa-bars fsnav-left" aria-hidden="true"></i>
+				</a>
+				<a class="fs-left logo-container" href="#">
+					<img alt="99doing" src="library/images/filmysphere-icon.png" /> 
+					<span class="fsnav-brandname">99doing</span>
+				</a>
+			</div>	
+			<div class="fs-left col-xs-10">
+				<div class="fsnav-search col-md-7">
+					<form role="search">
+						<div class="col-xs-12">
+						    <input type="text" value="" name="query" id="fssearch" placeholder="search things to do" class="form-control ui-autocomplete-input" autocomplete="off">
+						    <span class="glyphicon glyphicon-search fs-search-icon"></span>
+						</div>
+					</form>
+				</div>	
+				 <!-- Not Logged in Header -->
+					<ul class="nav navbar-nav fs-right fsnav-nologin-useraction">
+						<li class="fs-header-list">
+							<a href="javascript:void(0);" data-toggle="modal" data-target="#signup">Signup</a>
+						</li>
+						<li class="fs-header-list">
+							<a href="javascript:void(0);" data-toggle="modal" data-target="#login">Login</a>
+						</li>
+						<li class="fs-header-list">
+							<a href="javascript:void(0);" class="usercitylink"><i class="fa fa-map-marker"></i> <span class="usercity">Bengaluru</span></a>
+						</li>
+						<li class="fs-header-list">
+							<a href="/page/create">List Your Page</a>
+						</li>
+					</ul>
+					
+			</div><!-- /.navbar-collapse -->
+		</div>	<!-- End of Navigation Header -->
+
+		
+		<div class="fsnav-cities-template" style="display: none;">
+			<div class="fsnav-cities-container">
+				<div class="fsnav-cities-search">
+					<h4 class="fsnav-citysearch-heading text-center"><i class="fa fa-map-marker"></i> SEARCH YOUR CITY</h4>
+					<ul class="token-input-list-facebook"><li class="token-input-token-facebook"><p>Bengaluru</p><span class="token-input-delete-token-facebook">×</span></li><li class="token-input-input-token-facebook"><input type="text" autocomplete="off" id="token-input-fsCities" style="outline: none; display: none;"><tester style="position: absolute; top: -9999px; left: -9999px; width: auto; font-size: 12px; font-family: Verdana; font-weight: 400; letter-spacing: 0px; white-space: nowrap;"></tester></li></ul><input type="text" id="fsCities" class="searchcity form-control fsCities" style="display: none;">
+				</div>
+				<div class="fsnav-cities-body">
+					<h5 class="fsnav-city-heading text-center">TOP CITIES</h5>
+					<h5 class="top-cities fsnav-cities text-center"> 
+				    <a href="javascript:void(0);" class="cityname" data-citypermalink="bengaluru">Bengaluru,</a>
+				 
+				    <a href="javascript:void(0);" class="cityname" data-citypermalink="mysuru">Mysuru,</a>
+				 
+				    <a href="javascript:void(0);" class="cityname" data-citypermalink="chennai">Chennai,</a>
+				 
+				    <a href="javascript:void(0);" class="cityname" data-citypermalink="hyderabad">Hyderabad,</a>
+				 
+				    <a href="javascript:void(0);" class="cityname" data-citypermalink="new-delhi">New Delhi,</a>
+				 
+				    <a href="javascript:void(0);" class="cityname" data-citypermalink="mumbai">Mumbai</a>
+				 
+					</h5>
+					<h5 class="fsnav-city-seemore"><a href="javascript:void(0);" class="fsnav-morecity-link" data-toggle="modal" data-target="#fscities-modal">MORE CITIES</a></h5>
+				</div>
+			</div>
+		</div>	
+		
+	</nav>
 
 	<!-- Scripts included here -->
 	<script data-desc="requirejs runtime config" src="library/js/config/require-config.js"></script>
