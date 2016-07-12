@@ -39,10 +39,10 @@ module.exports = function ( grunt ) {
                 filesArr = files.split(',');
                 return grunt.file.expand( { cwd: path },filesArr );
             }
-            
+
             return grunt.file.expand( { cwd: path }, [
                 '**/*.less',
-                '**/normalize.css'
+                '**/bootstrap.css'
             ] );
         }
     });
